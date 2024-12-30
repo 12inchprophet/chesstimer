@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts link for a nicer font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chess-timer-box">
+      <h1 class="title">Chess Timer</h1>
+      <!-- Updated title here -->
+      <div class="timer-display">
+        <div class="player">
+          <div class="player-timer" id="player1">05:00</div>
+          <button id="player1-stop" class="control-btn">Player 1 Stop</button>
+        </div>
+        <div class="player">
+          <div class="player-timer" id="player2">05:00</div>
+          <button id="player2-stop" class="control-btn">Player 2 Stop</button>
+        </div>
+      </div>
+      <div class="controls">
+        <select id="time-select" class="time-select">
+          <option value="60">1 min</option>
+          <option value="180">3 min</option>
+          <option value="300" selected>5 min</option>
+          <option value="600">10 min</option>
+          <option value="1800">30 min</option>
+        </select>
+        <button id="set-time-btn" class="set-time-btn">Set Time</button>
+        <button id="start-btn" class="start-btn">Start</button>
+      </div>
+      <button id="reset-btn" class="reset-btn">Reset Timer</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
